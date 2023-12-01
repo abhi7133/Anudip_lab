@@ -1,0 +1,36 @@
+package javaprogram;
+abstract class base2{             // abstract class is standardition which we set and we have to implement in the class where we extends it
+	  abstract public void hii();
+
+	  abstract public void hello();
+
+	  public void goodmorning(){
+	      System.out.println("good morning");
+	  };
+
+
+	}
+
+	class derived2 extends base2{
+	    @Override
+	    public void hii(){
+	        System.out.println("hii");
+	    }
+
+	    @Override
+	    public void hello() {
+	        System.out.println("hello");
+	    }
+	}
+public class Exabstract {
+
+	public static void main(String[] args) {
+		
+			        derived2 d=new derived2();
+			        d.hii();
+			        d.hello();
+//			        base2 b=new base2(); ----its throwing the error if we create the object of base2 class
+			        d.goodmorning();
+			    }
+	}
+
