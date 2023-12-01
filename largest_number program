@@ -1,0 +1,23 @@
+package javaprogram;
+import java.util.Scanner;
+public class Largest_number {
+     public static void main(String[] args) {
+    	 Scanner sc=new Scanner(System.in);
+    	 System.out.print("enter the first number:-");
+    	 int fnum=sc.nextInt();
+    	 System.out.print("enter the second number:-");
+    	 int snum=sc.nextInt();
+    	 System.out.print("enter the third number:-");
+    	 int tnum=sc.nextInt();
+    	 if(fnum>snum && fnum>tnum) {
+    		 System.out.printf(" fnum:-%d is greater number",fnum);
+    	 }
+    	 else if(snum>fnum && snum>tnum) {
+    		 System.out.printf(" snum:-%d is greater number",snum);
+    	 }
+    	 else {
+    		 System.out.printf(" tnum:-%d is greater number",tnum);
+    	 }
+    			 
+     }
+}
